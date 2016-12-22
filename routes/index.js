@@ -9,7 +9,8 @@ var router = express.Router();
 router.get('/', function(req, res, next){
     res.render('index',
       {
-          title:'Express',
+          title:'Name of the game',
+          author:'Hongyu Zheng',
           description:'A simple recorder for T-E'
       });
 });
