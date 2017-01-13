@@ -3,4 +3,6 @@ $(document).ready(function(){
     //  1. User name
     //  2. Race Name (Dropdown)
     $('.modal').modal();
+
+    //
 });

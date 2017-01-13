@@ -11,10 +11,13 @@ block content
         form(class='col s12')
           div(class='row')
             div(class='input-field col s6')
-              input(placeholder='Player Name' id='player_name' type='text' class='validate')
+              input(id='_player_name' type='text' class='validate' name='playerName' required)
+              label(for='_player_name') Player Name
+
           div(class='row')
             div(class='input-field col s6')
-              input(id='_password' placeholder='Password' type='password' class='validate')
+              input(id='_password' type='password' class='validate' name='password' required)
+              label(for='_password') Password
 
-    div(class='modal-footer')
-      a(href='#!' class='modal-action modal-close waves-effect waves-green btn-flat') Agree
+          button(type='submit' class='modal-action btn waves-effect waves-orange') Register
+          button(type='button' class='modal-action modal-close waves-effect waves-green btn-flat') Close
