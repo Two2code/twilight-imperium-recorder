@@ -1,6 +1,11 @@
 extends layout
 
 block content
-  h5 Click the button to add a new player
-  button(class='btn green lighten-1 waves-effect waves-teal' style='height:200px; width: 180px;')
-    i(class='material-icons') add
+  a(class='btn green lighten-1 waves-effect waves-teal' href='#registerModal' style='height:200px; width: 180px;') +
+
+  div(id='registerModal' class='modal')
+    div(class='modal-content')
+      h4 Modal Header
+      p A bunch of text
+    div(class='modal-footer')
+      a(href='#!' class='modal-action modal-close waves-effect waves-green btn-flat') Agree
